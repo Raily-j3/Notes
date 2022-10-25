@@ -1,0 +1,28 @@
+import os
+
+os.name
+
+os.environ  环境变量
+
+
+# 目录操作
+os.mkdir('/Users/michael/testdir')
+os.rmdir('/Users/michael/testdir')
+os.listdir('.')
+
+
+# 路径操作
+os.path.abspath('.')
+os.path.join('/Users/michael', 'testdir')
+
+os.path.split('/Users/michael/testdir/file.txt')
+    ('/Users/michael/testdir', 'file.txt')
+os.path.splitext()
+
+
+# 对文件重命名:
+>>> os.rename('test.txt', 'test.py')
+# 删掉文件:
+>>> os.remove('test.py')
+os.path.isdir(x)
+os.path.isfile(x)
